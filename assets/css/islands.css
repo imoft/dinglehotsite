@@ -1,0 +1,22 @@
+.island-container {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.morphing-demo {
+  scale: 1;
+  z-index: -1;
+  fill: #00A30B;
+  stroke: none;
+}
+
+.island-container img {
+  z-index: 100;
+  position: absolute;
+}
+
+#systems {
+  cursor: pointer;
+}
+

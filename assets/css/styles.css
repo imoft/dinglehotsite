@@ -1,0 +1,197 @@
+h1, h2, h3, display {
+  font-family: 'Sporting Grotesque_Regular';
+}
+
+h4, h5 {
+  font-family: 'Work Sans';
+}
+
+.hidesection {
+  display: none;
+}
+
+html {
+  font-family: 'Work Sans';
+  padding: 0;
+  margin: 0;
+}
+
+.top-break {
+  margin: 1em 0 0 0;
+}
+
+.row {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.half-padding {
+  padding: 3em;
+}
+
+.green {
+  background-color: #00992E;
+}
+
+.peach {
+  background-color: #F2CDAD;
+}
+
+.mint {
+  background-color: #C5E7DB;
+}
+
+.dark {
+  background-color: #3C4B42;
+}
+
+.blue {
+  background-color: #007FE9;
+}
+
+
+.volume-btn {
+  border: white 2px solid;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  position: absolute;
+  margin: 1em;
+}
+
+
+section {
+  /*min-height: calc(100vh);*/
+  transform: translate(0, 100vh);
+}
+
+#home {
+  cursor: pointer;
+}
+
+#dialogues {
+  cursor: pointer;
+}
+
+#knowledge {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+.popover-body {
+  background: black; 
+  color: white;
+}
+
+.invention-text-input {
+  background: transparent;
+    border-bottom: 0px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 1.75rem;
+    font-family: 'Sporting Grotesque_Regular';
+
+     
+      height: 180px;
+      resize: none;
+
+  
+  color: #212529;
+    outline: none;
+    width: 100%;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.share {
+  background: transparent; 
+  border: none; 
+  color: black;
+  padding: 0px;
+  outline: none;
+}
+.popover .arrow::after {
+  border-bottom-color: black !important;
+}
+.reload-button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.rotation {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0);}
+  99% {transform: rotate(360);}
+  100% {transform: rotate(0);}
+}
+
+.text {
+  padding: 20px;
+  
+height: 40%;
+width: 90%;
+
+
+}
+
+
+.image {
+width: 100%;
+height: 50%;
+/*   background: red; */
+}
+
+.button-row{ 
+display: flex;
+flex-direction: row-reverse;
+height: 50px;
+width: 100%;
+
+}
+#svg {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+#path1 {
+fill: #2196F3;
+}
+
+#path2 {
+fill: #3c8246;
+}
+
+.controls {
+position: fixed;
+top: 0;
+left: 0;
+padding: 15px;
+}
+
+.dot {
+fill: #1a237e;
+fill-opacity: 0.3;
+stroke: #1a237e;
+stroke-width: 1;
+vector-effect: non-scaling-stroke;
+}
