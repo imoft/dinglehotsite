@@ -32,6 +32,12 @@ html {
   padding: 3em;
 }
 
+@media (max-width: 492px) {
+  .half-padding {
+    padding: 3em 2em;
+  }
+}
+
 .green {
   background-color: #00992E;
 }

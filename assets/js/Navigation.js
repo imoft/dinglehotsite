@@ -100,4 +100,84 @@ $(function () {
 
 
     })
+
+
+    // Footer 
+    $('#footer-a').click(() => {
+        $('section.intro').each((i, el) => {
+            $(el).removeClass('hidesection')
+        })
+        $('section.dialogues').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('section.systems').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('html, body').animate({
+            scrollTop: $("#intro-top").offset().top
+        }, 500);
+
+
+
+    })
+    $('#footer-b').click(() => {
+        $('section.intro').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('section.dialogues').each((i, el) => {
+            $(el).removeClass('hidesection')
+        })
+        $('section.systems').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('section.knowledge').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('html, body').animate({
+            scrollTop: $("#dialogues-top").offset().top
+        }, 500);
+    })
+
+
+    $('#footer-c').click(() => {
+        $('section.intro').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+
+        $('section.dialogues').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+
+        $('section.systems').each((i, el) => {
+            $(el).removeClass('hidesection')
+        })
+        $('section.knowledge').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('html, body').animate({
+            scrollTop: $("#systems-top").offset().top
+        }, 500);
+    })
+
+    $('#footer-d').click(() => {
+        $('section.intro').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('section.dialogues').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+        $('section.systems').each((i, el) => {
+            $(el).addClass('hidesection')
+        })
+
+        $('section.knowledge').each((i, el) => {
+            $(el).removeClass('hidesection')
+        })
+        $('html, body').animate({
+            scrollTop: $("#knowledge-top").offset().top
+        }, 500);
+
+
+
+    })
 });
