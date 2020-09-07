@@ -110,12 +110,13 @@
                         </div>
                     </div>
                     <p class="text-light" style="text-align: center;width: 90%;">Our playful idea generator, infused by
-                        the vocabulary of the workshop participants.</p><small
-                        style="color: rgb(197,231,219);font-weight: 500;">Tap to remix with your own ideas.</small>
+                        the vocabulary of the workshop participants.</p>
                 </div>
             </div>
             <div class="col d-flex flex-column justify-content-around mint">
                 <div class="container d-flex flex-column flex-grow-1 justify-content-center">
+                    <small class="top-break" style="text-align: center;">Tap to edit &amp; remix with you own
+                        ideas.</small>
                     <div class="col d-flex flex-column justify-content-center half-padding">
                         <h3 id="invention-text"> </h3> <textarea class="invention-text-input" type="text"
                             id="text-input" name="fname"></textarea>
@@ -126,12 +127,14 @@
                             <button id="repeat" class="reload-button" onclick="handleClick()"><i class="fa fa-repeat"
                                     id="" style="font-size: 46px; transition: 0.5s all"></i></button></div>
                     </div>
-                </div>
-                <button onclick="copySessionLink()" type="button" class="btn share" style="margin-bottom: 1em" data-container="body"
+                </div> 
+                <a tabindex="0"  onclick="copySessionLink()"  class="btn btn-lg share" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Link copied to clipboard!">Share it!</a>
+                <!-- <button type="button" class="btn btn-lg share popover-dismiss" style="margin-bottom: 1em" data-toggle="popover"  data-content="Link copied to clipboard" data-trigger="focus">Share it!</button> -->
+                <!-- <button onclick="copySessionLink()" type="button" class="btn share" style="margin-bottom: 1em" data-container="body"
                     data-toggle="popover" data-trigger="focus" data-placement="bottom"
                     data-content="Link copied to clipboard!">
                     <h4>Share it!</h4>
-                </button>
+                </button> -->
             </div>
         </div>
     </section>
@@ -416,7 +419,7 @@
             </div>
         </div>
     </section>
-    <section id="footer">
+    <!-- <section id="footer">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 dark">
             <div class="col d-flex flex-column justify-content-end half-padding">
                 <div class="d-flex flex-column align-items-start top-break"
@@ -443,6 +446,30 @@
                         style="margin-left: .2em;"></i></a>
             </div>
         </div>
+    </section> -->
+    <section>
+        <div class="row no-gutters row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 dark">
+            <div class="col half-padding">
+                <div class="container top-break" style="padding-left: 2em;">
+                    <h2 class="text-white top-break" style="text-align: left;">Let's Re-imagine the Dingle Peninsula together.</h2><a class="btn btn-light btn-lg top-break" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLSc_dNYRoxzmhxu1yy7nKsqHulKNHlKkPazMUHHMoCtYGyfAgg/viewform" target="blank">Share your story with us<i class="la la-arrow-right" style="margin-left: .2em;"></i></a></div>
+            </div>
+            <div class="col text-white d-flex flex-column half-padding">
+                <div class="container d-flex flex-column top-break" style="padding-left: 2em;"><a class="text-white top-break" href="https://dinglehub.com/" target="blank">Organized by Dingle Creativity &amp; Innovation Hub&nbsp;<i class="la la-arrow-right" style="margin-left: .2em;"></i></a><a class="text-white" href="https://imaginationofthings.com/"
+                        style="padding-bottom: 2em;" target="blank">Created by Imagination of Things<i class="la la-arrow-right" style="margin-left: .2em;"></i></a></div>
+            </div>
+            <div class="col d-flex flex-column justify-content-end">
+                <div class="d-flex mini-menu">
+                    <div class="col green"><a class="text-white top-break" id="footer-a" style="font-size: 22px;">Re-imagine Dingle Peninsula</a></div>
+                    <div class="col blue"><a class="text-white" id="footer-b" style="font-size: 22px;">New Dialogues &amp; Connections</a></div>
+                </div>
+            </div>
+            <div class="col text-white d-flex flex-column justify-content-end">
+                <div class="d-flex mini-menu">
+                    <div class="col mint"><a class="text-white" id="footer-c" style="font-size: 22px;">Systems &amp; Resilience</a></div>
+                    <div class="col peach"><a class="text-white" id="footer-d" style="font-size: 22px;">Knowledge</a></div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/combine/npm/rita@1.3.94,npm/animejs@3.2.0"></script>
@@ -452,6 +479,8 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <script src="assets/js/HighlightPlugin.js"></script>
+
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <script src="assets/js/InventionMachine.js"></script>
     <script src="assets/js/islands.js"></script>

@@ -10,6 +10,10 @@ $(function () {
         },
     };
 
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+
     let count = 0
 
     var isMobile = false; //initiate as false

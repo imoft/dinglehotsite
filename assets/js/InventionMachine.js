@@ -396,9 +396,9 @@ function updateText(val) {
 }
 $(function () {
     $('[data-toggle="popover"]').popover()
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    })
+    // $('.popover-dismiss').popover({
+    //     trigger: 'focus'
+    // })
 
     $('#repeat').click(function () {
 
@@ -462,9 +462,11 @@ $(function () {
         document.getElementById('invention-text').innerText = textArray[0]
         $('#text-input').val(textArray[1])
 
-        $([document.documentElement, document.body]).animate({
+
+
+        $([document.documentElement, document.body, window]).animate({
             scrollTop: $("#intro-machine").offset().top
-        }, 500);
+        }, 1000);
 
     }
     var blob2 = createBlob({
