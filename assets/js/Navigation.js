@@ -9,8 +9,17 @@ $(function () {
             return t
         },
     };
-
+    
+    let count = 0
     new PanelSnap(defaultOptions);
+
+    $('#scrollUp').click(() => {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    })
+
+
 
 
     //     Setup Clicks for nav

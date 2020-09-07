@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <section class="page_container" style="position: absolute;top: 0px;left: 0px;transform: none;">
         <div id="fullscreen-m" class="m-fullscreen-menu">
             <div class="m-dialog">
@@ -93,16 +94,20 @@
             <div class="col half-padding blue">
                 <div class="container d-flex flex-column justify-content-around align-items-center align-content-center"
                     style="height: 100%;">
-                    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
+                    <div onclick="handleClick()" class="d-flex flex-column justify-content-center align-items-center"
+                        style="height: 100%; cursor: pointer;">
                         <div class="d-flex flex-column align-items-center top">
-                            <h3 class="text-center text-white" style="width: 80%;">Dingle Invention Generator</h3>
-                        </div> <div class="image">
+                            <h3 class="text-center text-white" style="width: 80%; z-index: 1;">Dingle Invention
+                                Generator</h3>
+                        </div>
+
+                        <div class="image">
 
                             <svg id="svg" width="100%" viewBox="0 0 1000 1000">
-                              <path id="path2"></path>
-                    
+                                <path id="path2"></path>
+
                             </svg>
-                          </div>
+                        </div>
                     </div>
                     <p class="text-light" style="text-align: center;width: 90%;">Our playful idea generator, infused by
                         the vocabulary of the workshop participants.</p><small
@@ -113,18 +118,20 @@
                 <div class="container d-flex flex-column flex-grow-1 justify-content-center">
                     <div class="col d-flex flex-column justify-content-center half-padding">
                         <h3 id="invention-text"> </h3> <textarea class="invention-text-input" type="text"
-                          id="text-input" name="fname"></textarea>
-                          <br/>
-                  
+                            id="text-input" name="fname"></textarea>
+                        <br />
+
                         <div class="d-flex justify-content-center align-items-center">
-                        
-                          <button id="repeat" class="reload-button" onclick="handleClick()"><i class="fa fa-repeat" id="" style="font-size: 46px; transition: 0.5s all"></i></button></div>
-                      </div>
+
+                            <button id="repeat" class="reload-button" onclick="handleClick()"><i class="fa fa-repeat"
+                                    id="" style="font-size: 46px; transition: 0.5s all"></i></button></div>
+                    </div>
                 </div>
                 <button onclick="copySessionLink()" type="button" class="btn share" data-container="body"
-                data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Link copied to clipboard!">
-                <h4>Share it!</h4>
-              </button>
+                    data-toggle="popover" data-trigger="focus" data-placement="bottom"
+                    data-content="Link copied to clipboard!">
+                    <h4>Share it!</h4>
+                </button>
             </div>
         </div>
     </section>
@@ -161,8 +168,18 @@
                         calls and culture exchange programs.&nbsp; A series of initiatives that can disrupt tourism
                         seasonality and bring fresh perspectives to the region.</small>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="mint-gradient gradient"></div>
+                        <img src="assets/img/Dingle-Playground.png" style="width: 100%; padding:3em 0 0 2.5em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000">
+                                <path class="dingle-playground"
+                                    d="m393.5,234c-105,18 -177,48 -183,100c-6,52 -38,175 -71,234c-33,59 -86,162 -14,237c72,75 101,143 209,141c108,-2 230,-82 268,-121c38,-39 85,-44 119,-46c34,-2 146,-86 175,-91c29,-5 108,-151 61,-173c-47,-22 -110,-27 -122,-50c-12,-23 93,-14 130,-44c37,-30 -2,-120 -56,-122c-54,-2 -94,-12 -145,-26c-51,-14 -266,-57 -371,-39z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -185,8 +202,19 @@
                         with other regions with shared interests?&nbsp;How to develop a regional identity through
                         proactive interaction with our planet?</small>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="mint-gradient gradient"></div>
+                        <img src="assets/img/I-am-of-Dingle.png" style="width: 100%; padding:0em 0 0 3em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000" style="padding-top:3em; scale:.9;">
+                                <path class="of-dingle"
+                                    d="m254,162.95c-51,0 -144,96 -152,159c-8,63 11,44 -8,105c-19,61 -75,208 -31,239c44,31 130,35 128,79c-2,44 57,187 127,176c70,-11 167,-7 209,-2c42,5 284,-1 342,-83c58,-82 89,-189 82,-259c-7,-70 -54,-100 -125,-100c-71,0 -80,50 -222,88c-142,38 -293,-39 -333,-93c-40,-54 34,-140 95,-141c61,-1 381,-20 300,-123c-81,-103 -154,-128 -199,-85c-45,43 -162,40 -213,40z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -230,8 +258,18 @@
                         and decentralize cultural programs. The Mobile Creativity Hub with workshops or Library &amp;
                         Reading Bus are examples to unlock possibilities.</small>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="white-gradient gradient"></div>
+                        <img src="assets/img/Mobility-System.png" style="width: 100%; padding:2.4em 0 0 1em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000">
+                                <path class="mobility-system"
+                                    d="m174,264.95001c35,-44 124,-35 162,-86c38,-51 201,-47 264,-2c63,45 69,21 118,47c49,26 33,67 36,87c3,20 73,-1 138,48l68,112c23,24 36,81 12,159c-24,78 -152,99 -230,105c-78,6 -19,-89 -193,-38c-174,51 -193,85 -300,91c-107,6 -182,-92 -121,-129c61,-37 75,-58 38,-70c-37,-12 -30,-41 7,-56c37,-15 -29,-41 85,-65c114,-24 12,-85 -47,-85c-59,0 -72,-74 -37,-118z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -253,8 +291,18 @@
                         What if a virtual Dingle could mirror the Peninsula and encourage its community efforts through
                         digital transformation and simulate priorities like reducing carbon footprint?</small>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="white-gradient gradient"></div>
+                        <img src="assets/img/Living-Space.png" style="width: 100%; padding:5em 0 0 3em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000">
+                                <path class="living-space-island"
+                                    d="m270,283.45c-115,-35 -173,-34 -189,41c-16,75 61,64 98,124c37,60 -31,116 -49,156c-18,40 -56,144 31,188c87,44 145,-54 264,-3c119,51 238,71 298,76c60,5 153,57 189,-9c36,-66 31,-111 -19,-205c-50,-94 -160,-112 -152,-139c8,-27 108,-110 134,-194c26,-84 65,-137 1,-159c-64,-22 -178,35 -261,89c-83,54 -230,70 -345,35z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -272,8 +320,18 @@
                         what it is.&nbsp;This initiative would start with a pop-up in the Annascaul to share its vision,
                         gather community support, and connect stakeholders.</p>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="white-gradient gradient"></div>
+                        <img src="assets/img/Sensory-Gardens.png" style="width: 100%; padding:0em 0 0 3em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000" style="padding-top:1em;">
+                                <path class="sensory-gardens"
+                                    d="m419.5,152c-61,0 -147,14 -169,41c-22,27 -31,29 -62,45c-31,16 -121,76 -124,110c-3,34 18,88 53,88c35,0 77,41 77,42c0,1 -37,103 -66,107c-29,4 -104,29 -49,93c55,64 366,133 490,117c124,-16 187,-12 177,20c-10,32 -69,99 29,82c98,-17 152,-42 152,-84c0,-42 -26,-104 -24,-130c2,-26 -24,-81 -46,-85c-22,-4 109,-57 85,-125c-24,-68 -151,-57 -195,-66c-44,-9 -13,-53 26,-77c39,-24 123,-24 91,-80c-32,-56 -65,-69 -174,-77c-109,-8 -210,-21 -271,-21z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -311,8 +369,18 @@
                         (conferences, training, temporary labs, open calls, commissioned projects) that puts the Dingle
                         Peninsula as a reference and inspiration on renewable energy.</p>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="peach-gradient gradient"></div>
+                        <img src="assets/img/Dingle-Energy-Academy.png" style="width: 100%; padding:-2em 0 0 1em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000">
+                                <path class="energy-academy"
+                                    d="m500.5,319c-123,4 -305,144 -346,175c-41,31 -138,83 -87,147c51,64 64,129 86,129c22,0 89,19 121,18c32,-1 73,105 156,115c83,10 344,-3 356,-31c12,-28 147,-146 171,-172c24,-26 35,-166 -9,-188c-44,-22 -167,-88 -206,-130c-39,-42 -119,-67 -242,-63z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -333,12 +401,22 @@
                         Peninsula, so let’s start with a platform to support, incentivize, and be a beacon for talent
                         development in the creative &amp; cultural area.&nbsp;</small>
                 </div>
-                <div class="col d-flex flex-column justify-content-center"><img src="assets/img/test-island.png"
-                        width="100%"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="island-container">
+                        <div class="peach-gradient gradient"></div>
+                        <img src="assets/img/Educate-from-Dingle.png" style="width: 100%; padding:3em 0 0 2.5em;">
+                        <div class="morphing-demo">
+                            <svg width="100%" height="100%" viewbox="0 0 1000 1000">
+                                <path class="educate-dingle"
+                                    d="m838.5,139c-41,0 -175,13 -222,74c-47,61 -304,146 -440,171c-136,25 -146,162 -86,170c60,8 153,16 179,16c26,0 214,-38 119,28c-95,66 -327,89 -307,167c20,78 238,142 305,81c67,-61 116,3 109,17c-7,14 -40,57 38,25c78,-32 101,-44 165,-34c64,10 44,65 109,-19c65,-84 94,-69 113,-117c19,-48 57,-155 25,-206c-32,-51 -87,-102 -74,-133c13,-31 72,-32 69,-99c-3,-67 -61,-141 -102,-141z" />
+                                </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="footer">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 dark">
             <div class="col d-flex flex-column justify-content-end half-padding">
                 <div class="d-flex flex-column align-items-start top-break"
@@ -352,8 +430,8 @@
             </div>
             <div
                 class="col text-white d-flex flex-column justify-content-end align-items-start align-content-start half-padding">
-                <i class="la la-arrow-up top-break" style="font-size: 42px;margin-bottom: .5em;"
-                    href="#dingle-menu"></i><a class="text-white top-break" href="#" style="font-size: 22px;">Re-imagine
+                <i  id="scrollUp" class="la la-arrow-up top-break" style="font-size: 42px;margin-bottom: .5em;"
+                    href="#fullscreen-m"></i><a class="text-white top-break" href="#" style="font-size: 22px;">Re-imagine
                     Dingle Peninsula</a><a class="text-white" href="#" style="font-size: 22px;">New Dialogues &amp;
                     Connections</a>
                 <a class="text-white" href="#" style="font-size: 22px;">Systems &amp; Resilience</a><a
