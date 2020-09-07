@@ -1,0 +1,122 @@
+section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    /*padding: 25px;*/
+  }
+}
+
+
+
+.panels section {
+  min-height: 100%;
+}
+
+.panels section:nth-child(2) {
+  min-height: calc(100% + 200px);
+}
+
+.panels section:nth-child(2n) {
+}
+
+.panels.horizontal {
+  display: flex;
+}
+
+.panels.horizontal section {
+  min-height: 0;
+  min-width: 100%;
+}
+
+.panels.horizontal section:nth-child(2) {
+  min-width: calc(100% + 200px);
+}
+
+section .explanation, section pre {
+  background: #edf7f5;
+}
+
+section:nth-child(2n) .explanation, section:nth-child(2n) pre {
+  background: #ffffff;
+}
+
+section.introduction {
+  align-items: center;
+  justify-content: center;
+}
+
+section.introduction .center {
+  text-align: center;
+}
+
+section.introduction .center p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+section.introduction .center p a {
+  word-break: break-all;
+}
+
+section.introduction .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 60%;
+}
+
+section.introduction .bottom:after {
+  display: block;
+  margin: 1em auto 0;
+  height: 20px;
+  width: 20px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  content: '';
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+section.options, section.options_explained {
+  min-height: 100vh;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.group {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -25px;
+}
+
+.group > * {
+  margin: 25px;
+}
+
+.panels, pre {
+  flex-grow: 99999;
+  flex-basis: 300px;
+}
+
+.panels {
+  overflow: auto;
+}
+

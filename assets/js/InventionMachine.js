@@ -318,6 +318,7 @@ function newInventionC() {
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
+    console.log(window.location.search.substring(1))
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
         sParameterName,
@@ -350,7 +351,11 @@ function decodeUnicode(str) {
   }
 
 function copySessionLink() {
-    let link = window.location.protocol + "//" + window.location.host + "?data="
+
+    console.log(location)
+    let link = location.origin + "?data="
+
+    
     if (globalText) {
 
         let dataArray = JSON.stringify(globalText)
@@ -372,6 +377,7 @@ function copySessionLink() {
             navigator.clipboard.writeText(shareEncoded)
                 .then(() => {
                     // Success!
+                    console.log(shareEncoded)
 
                 })
                 .catch(err => {
