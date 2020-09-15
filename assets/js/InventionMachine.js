@@ -240,7 +240,7 @@ function handleClick() {
         $('#text-input').height('6rem')
 
      
-   } else if(!isMobile && stext.length>22  ) {
+   } else if(!isMobile && stext.length>25  ) {
        if(isMobile) {
         $('#text-input').height('2rem')
 
@@ -504,6 +504,9 @@ $(function () {
     var data = getUrlParameter('data');
     console.log(data)
     
+
+
+    // setTimeout(()=>)
 
     if (!data) {
         document.getElementById('invention-text').innerText = text
