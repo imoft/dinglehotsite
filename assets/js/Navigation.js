@@ -2,7 +2,7 @@ $(function () {
     var defaultOptions = {
         container: document.body,
         panelSelector: 'section',
-        directionThreshold: 20,
+        directionThreshold: 50,
         delay: 0,
         duration: 400,
         easing: function (t) {
